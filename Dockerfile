@@ -9,7 +9,7 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o output
 
-#
+# #
 # build runtime image
 FROM microsoft/aspnetcore
 WORKDIR /app
